@@ -19,10 +19,16 @@ Minimal vimrc for guerilla devs
 
 `infiltrate.[sh|bat]`
 
+Running this script will create backup of current system's vimrc and
+install `guerilla-vim` to your system.
+
 
 ## Guerilla - retreat
 
 `retreat.[sh|bat]`
+
+Running this script will remove `guerilla-vim` from your system and restore previous
+vimrc.
 
 
 ## Features
