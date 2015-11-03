@@ -34,7 +34,7 @@ Minimal vimrc for guerilla devs
 
 ## Customization
 - Fully documented
-- Fell free to customize configurations as you want
+- Fell free to customize configurations as you want!
 
 [gruvbox]: https://github.com/morhetz/gruvbox
 [supertab]: https://github.com/ervandew/supertab
