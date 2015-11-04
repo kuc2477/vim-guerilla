@@ -15,7 +15,7 @@ This project is a work in progress
 
 ## Requirements
 - **Just vim and git on your platform**
-- no root authority required
+- no root privilege required
 - no vim extensions required
 
 
@@ -37,7 +37,7 @@ This project is a work in progress
 - Auto completion (powered by [supertab])
 - Fuzzy file navigation (powered by [ctrlp])
 - Fuzzy code navigation (powered by [easymotion])
-- [Nerdtree] support
+- [nerdtree] support
 
 ## Customization
 - Fully documented
@@ -47,4 +47,4 @@ This project is a work in progress
 [supertab]: https://github.com/ervandew/supertab
 [ctrlp]: https://github.com/kien/ctrlp.vim
 [easymotion]: https://github.com/easymotion/vim-easymotion
-[Nerdtree]: https://github.com/scrooloose/nerdtree
+[nerdtree]: https://github.com/scrooloose/nerdtree
