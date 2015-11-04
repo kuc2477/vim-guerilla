@@ -46,12 +46,11 @@ let g:ctrlp_custom_ignore = {'dir': '*_build$'}
 
 "============================General Settings================================"
 
-"COLOR SCHEME
+" default colorscheme
 set background=dark
 colorscheme wombat256i
 
-
-"TERMINAL
+" configure terminal
 if &term =~ '256color'
     " disable Background Color Erase (BCE) so that color schemes
     " render properly when inside 256-color tmux and GNU screen.
@@ -59,27 +58,27 @@ if &term =~ '256color'
     set t_ut=
 endif
 
-"KEY STROKE TIMEOUT
+" keystroke timeout
 set timeoutlen=1500
 
-"INDENTATIONS
+" default indentations to fallback
 set expandtab
 set smarttab
 set smartindent
 set shiftwidth=4
 set tabstop=4
 
-"SEARCH
+" configure search behaviour
 set hlsearch
 set incsearch
 set magic					
 
-"SETTINGS FOR DISPLAY
+" UI related configurations
 set nu
 set colorcolumn=79
 highlight ColorColumn ctermbg=235
 
-"KEY MAPPINGS
+" key mappings
 map <F9> :tabnew<CR>
 map <F10> :tabclose<CR>
 vnoremap <C-f> =
@@ -90,7 +89,7 @@ nnoremap = :vertical res +10<CR>
 nnoremap <leader>- :res -20<CR>
 nnoremap <leader>= :res +10<CR>
 
-"Indentations
+" lang specific indentations
 au FileType sh setl ts=2 sw=2 sts=2
 au FileType bash setl ts=2 sw=2 sts=2
 au FileType haskell setl sw=2 
@@ -101,6 +100,6 @@ au FileType scss setl ts=2 sw=2 sts=2
 au FileType sass setl ts=2 sw=2 sts=2
 au FileType less setl ts=2 sw=2 sts=2
 
-"Miscs
+" filetype miscs
 au! BufRead,BufNewFile *.wsgi setfiletype python
 au! BufRead,BufNewFile *.less setfiletype less
