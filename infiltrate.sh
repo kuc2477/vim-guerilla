@@ -1,3 +1,6 @@
+#!/bin/bash
+
+
 git submodule update --init
 
 # create backup of system's current vim configurations
