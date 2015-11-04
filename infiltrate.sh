@@ -21,9 +21,9 @@ SYSTEM_VIMDIR="$HOME/.vim"
 
 git submodule update --init
 
-if [ ! -f "$SYSTEM_VIMRC" && \
+if [[ ! -f "$SYSTEM_VIMRC" && \
   "$(cat "$GUERILLA_VIMRC")" != \
-  "$(cat "$SYSTEM_VIMRC")"]; then
+  "$(cat "$SYSTEM_VIMRC")" ]]; then
   # create shelter if it doesn't exists
   if [ ! -d "$SHELTER" ]; then mkdir "$SHELTER"; fi
 
@@ -38,8 +38,9 @@ if [ ! -f "$SYSTEM_VIMRC" && \
   # deploy guerilla to the system
   cp -r "$GUERILLA_VIMRC" "$HOME/.vimrc"
   cp -r "$GUERILLA_VIMDIR" "$HOME/.vim"
+
+  # install plugins
+  vim +PluginInstall +qall
+  vim +PluginClean! +qall
 fi
 
-# install plugins
-vim +PluginInstall +qall
-vim +PluginClean! +qall

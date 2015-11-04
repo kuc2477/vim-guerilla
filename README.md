@@ -19,12 +19,12 @@ This project is a work in progress
 - no vim extensions required
 
 
-## Guerilla - infiltrate 
+## Infiltrate
 
 `infiltrate.[sh|bat]`
 
 
-## Guerilla - retreat
+## Retreat
 
 `retreat.[sh|bat]`
 
