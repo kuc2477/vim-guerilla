@@ -1,7 +1,11 @@
 # plugins themselves will not be version controlled
 vim/*
-# vundle submodule is exception
+
+# except for vundle plugin submodule
 !vim/bundle/Vundle.vim
+
+# system vimrc backups
+.bak/
 
 # swap files
 *.sw*
