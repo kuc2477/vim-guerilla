@@ -1,5 +1,5 @@
 # plugins themselves will not be version controlled
-#vim/*
+vim/*
 # vundle submodule is exception
 !vim/bundle/Vundle.vim
 
