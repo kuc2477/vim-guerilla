@@ -4,8 +4,8 @@ vim/*
 # except for vundle plugin submodule
 !vim/bundle/Vundle.vim
 
-# system vimrc backups
-.bak/
+# shelter
+.shelter/
 
 # swap files
 *.sw*
