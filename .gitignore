@@ -1,0 +1,7 @@
+# plugins themselves will not be version controlled
+#vim/*
+# vundle submodule is exception
+!vim/bundle/Vundle.vim
+
+# swap files
+*.sw*
