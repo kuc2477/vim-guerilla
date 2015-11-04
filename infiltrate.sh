@@ -21,7 +21,7 @@ SYSTEM_VIMDIR="$HOME/.vim"
 
 git submodule update --init
 
-if [[ ! -f "$SYSTEM_VIMRC" && \
+if [[ ! -f "$SYSTEM_VIMRC" || \
   "$(cat "$GUERILLA_VIMRC")" != \
   "$(cat "$SYSTEM_VIMRC")" ]]; then
   # create shelter if it doesn't exists
