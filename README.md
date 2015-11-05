@@ -19,9 +19,9 @@ This project is a work in progress
 - no vim extensions required
 
 
-## Infiltrate
+## Occupy
 
-`infiltrate.[sh|bat]`
+`occupy.[sh|bat]`
 
 
 ## Retreat
@@ -30,11 +30,11 @@ This project is a work in progress
 
 
 ## Features
-- Create backup of system's vimrc and restore when `vim-guerilla` retreats
-- Syntax highlights
-- Sensible indentation configurations for each languages
-- Colorschemes (default with [wombat256i])
+- Evacuate current user's vimrc on occupation and restore when `vim-guerilla` retreats
+- Sensible indentation for each languages
 - Auto completion (powered by [supertab])
+- Colorschemes (default with [wombat256i])
+- Syntax highlights
 - Fuzzy file navigation (powered by [ctrlp])
 - Fuzzy code navigation (powered by [easymotion])
 - [nerdtree] support

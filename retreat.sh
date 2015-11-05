@@ -9,20 +9,25 @@
 SHELTER="$(pwd)/$(dirname $0)/.shelter"
 
 # vim
-SYSTEM_VIMRC="$SHELTER/.vimrc"
-SYSTEM_VIMDIR="$SHELTER/.vim"
+USER_VIMRC="$SHELTER/vimrc"
+USER_VIMDIR="$SHELTER/vim"
+GUERILLA_VIMRC="$HOME/.vimrc"
+GUERILLA_VIMDIR="$HOME/.vim"
 
 
 # =======
 # Retreat
 # =======
 
-if [ ! -f "$SYSTEM_VIMRC" ]; then
-  # restore system vimrc if exists in the shelter
-  mv "$SYSTEM_VIMRC" "$HOME/.vimrc"
+if [ -d "$SHELTER" ]; then
+  # remove guerillas
+  if [ -f "$GUERILLA_VIMRC" ]; then rm -f "$GUERILLA_VIMRC"; fi
+  if [ -d "$GUERILLA_VIMDIR" ]; then rm -rf "$GUERILLA_VIMDIR"; fi
 
-  # restore system vimdir if exists in the shelter
-  if [ -d "$SYSTEM_VIMDIR" ]; then
-    mv "$SYSTEM_VIMDIR" "$HOME/.vim"
-  fi
+  # restore current user's vimrc / vimdir if exists in the shelter
+  if [ -f "$USER_VIMRC" ]; then mv -i "$USER_VIMRC" "$HOME/.vimrc"; fi
+  if [ -d "$USER_VIMDIR" ]; then mv -i "$USER_VIMDIR" "$HOME/.vim"; fi
+
+  # destroy shelter
+  rm -rf "$SHELTER"
 fi
