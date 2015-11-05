@@ -22,11 +22,15 @@ Plugin 'Lokaltog/vim-easymotion'
 " Auto completion
 Plugin 'ervandew/supertab'
 
+" Multiple cursor & Visual move
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'matze/vim-move'
+
+" Surround
+Plugin 'tpope/vim-surround'
+
 " Colorschemes
 Plugin 'flazz/vim-colorschemes'
-
-" Multiple cursor
-Plugin 'terryma/vim-multiple-cursors'
 
 call vundle#end()
 filetype plugin indent on
@@ -114,13 +118,12 @@ endif
 " Key mappings
 map <F9> :tabnew<CR>
 map <F10> :tabclose<CR>
-vnoremap <C-f> =
 nnoremap <tab> :tabnext<CR>
 nnoremap <S-tab> :tabprevious<CR>
 nnoremap - :vertical res -10<CR>
 nnoremap = :vertical res +10<CR>
 nnoremap <leader>- :res -20<CR>
-nnoremap <leader>= :res +10<CR>
+nnoremap <leader>= :res +20<CR>
 
 " Lang specific indentations
 au FileType sh setl ts=2 sw=2 sts=2
