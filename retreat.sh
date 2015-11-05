@@ -9,8 +9,8 @@
 SHELTER="$(pwd)/$(dirname $0)/.shelter"
 
 # vim
-USER_VIMRC="$SHELTER/vimrc"
-USER_VIMDIR="$SHELTER/vim"
+USER_VIMRC="$SHELTER/.vimrc"
+USER_VIMDIR="$SHELTER/.vim"
 GUERILLA_VIMRC="$HOME/.vimrc"
 GUERILLA_VIMDIR="$HOME/.vim"
 
