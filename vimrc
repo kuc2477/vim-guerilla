@@ -22,9 +22,8 @@ Plugin 'Lokaltog/vim-easymotion'
 " Auto completion
 Plugin 'ervandew/supertab'
 
-" Multiple cursor & Visual move
+" Multiple cursor 
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'matze/vim-move'
 
 " Surround
 Plugin 'tpope/vim-surround'
