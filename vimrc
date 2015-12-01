@@ -1,8 +1,7 @@
 " NOT COMPATIBLE TO LEGACY VI VERSIONS
 set nocompatible
 
-" VUNDLE
-filetype off
+"==============================VUNDLE======================================="
 
 " configure runtime path based on machine's OS
 if has('win32')
@@ -11,7 +10,9 @@ else
     set rtp+=~/.vim/bundle/Vundle.vim/
 endif
 
+filetype off
 call vundle#begin()
+
 Plugin 'VundleVim/Vundle.vim'
 
 
