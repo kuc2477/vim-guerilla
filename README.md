@@ -1,16 +1,40 @@
 # vim-guerilla
 Minimal, lightweight cross platform vim configuration for guerilla devs
 
-## Note
-Windows users should add installed gvim directory to your $PATH
-enviornment variable before you run `occupy.bat`
+## Author
+[Ha Junsoo](https://github.com/kuc2477)
+
+## Rationale
+Although vim has one of the most richest plugin ecosystem by itself,
+some of them requires vim extensions (python, lua, etc) and it sucks
+when it comes to a situation where we need them on non-root privileged
+local machines with vanilla vim. **`vim-guerilla` is a sensible vim
+configuration with a handful of plugins that doesn't require any
+vim extensions at all.**
+
+`vim-guerilla` will create a backup of previous vim configurations on
+occupation and restore it when you retreat.
+
+## TL;DR
+`vim-guerilla` solves following 2 problems
+- Need for a lightweight, cross platform vim configuration with easy installation
+- Tedious work to create backup of previous configurations before installing one's own vimrc
+
+
 
 ## Usage
 ![usage cast](./cast.gif)
 
+## Occupy
+`occupy.[sh|bat]` (*windows users should add gvim directory to
+                    your `PATH` before occupation*)
+
+## Retreat
+`retreat.[sh|bat]`
+
 ## Features
-- Evacuates current user's vimrc on occupation
-- Restores previous vimrc on retreat
+- Evacuate current user's vimrc on occupation
+- Restore previous vimrc on retreat
 - Sensible indentation for each languages
 - Syntax highlights
 - Auto completion (powered by [supertab])
@@ -30,15 +54,8 @@ enviornment variable before you run `occupy.bat`
 ## Requirements
 - no root privilege required
 - no vim extensions required
-- **Just vim and git on your platform**
+- **Just vim (gvim) and git on your platform**
 
-## Occupy
-
-`occupy.[sh|bat]`
-
-## Retreat
-
-`retreat.[sh|bat]`
 
 ## Customization
 - Fully documented
