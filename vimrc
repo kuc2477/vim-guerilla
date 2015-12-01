@@ -60,6 +60,9 @@ map <C-u> :NERDTreeTabsToggle<CR>
 let g:EasyMotion_smartcase = 1
 nmap <leader>f <Plug>(easymotion-sn)
 
+"VIM-MOVE
+let g:move_key_modifier = 'C'
+
 "CTRLP
 let g:ctrlp_map = '<leader>p'
 let g:ctrlp_cmd = 'CtrlPMixed'
@@ -70,13 +73,14 @@ let g:ctrlp_working_path_mode = 0
 
 " Default colorscheme
 set background=dark
-colorscheme wombat256i
+colorscheme wombat256mod
 syntax on
 
 " Default encoding - change default encoding as you want
 set enc=utf-8
 
 " Terminal
+set term=xterm-256color
 if &term =~ '256color'
     " disable Background Color Erase (BCE) so that color schemes
     " render properly when inside 256-color tmux and GNU screen.
