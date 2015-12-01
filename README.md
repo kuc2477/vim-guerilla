@@ -2,12 +2,12 @@
 Minimal, lightweight cross platform vim configuration for guerilla devs
 
 
-# Note
-This project is still a work in progress
-
-
-# Author
+## Author
 - [Ha Junsoo](kuc2477@gmail.com)
+
+
+## Note
+This project is still a work in progress
 
 
 ## Compatibility
@@ -45,6 +45,7 @@ This project is still a work in progress
 ## Customization
 - Fully documented
 - Feel free to customize configurations as you want!
+
 
 [gruvbox]: https://github.com/morhetz/gruvbox
 [supertab]: https://github.com/ervandew/supertab
