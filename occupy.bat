@@ -39,7 +39,7 @@ if not exist %SHELTER% (mkdir %SHELTER%)
 :: clear shelter
 del /q %SHELTER%\*
 
-:: evacuate current user's vimrc /vimdir if exists
+:: evacuate current user's vimrc / vimdir if exists
 if exist %USER_VIMRC% (move %USER_VIMRC% %SHELTER%)
 if exist %USER_VIMDIR% (move %USER_VIMDIR% %SHELTER%)
 

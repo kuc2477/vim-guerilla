@@ -95,31 +95,11 @@ set nu
 set colorcolumn=79
 highlight ColorColumn ctermbg=235
 
-" Tmux
-if exists('$TMUX')
-    function! TmuxOrSplitSwitch(wincmd, tmuxdir)
-        let previous_winnr = winnr()
-        silent! execute "wincmd " . a:wincmd
-        if previous_winnr == winnr()
-            call system("tmux select-pane -" . a:tmuxdir)
-            redraw!
-        endif
-    endfunction
-
-    let previous_title = substitute(system("tmux display-message -p '#(pane_title)'"), '\n', '', '')
-    let &t_ti = "\<ESC>]2:vim\<Esc>\\" . &t_ti
-    let &t_te = "\<ESC>]2:". previous_title . "\<ESC>\\" . &t_te
-
-    nnoremap <silent> <C-h> :call TmuxOrSplitSwitch('h', 'L')<CR>
-    nnoremap <silent> <C-j> :call TmuxOrSplitSwitch('j', 'D')<CR>
-    nnoremap <silent> <C-k> :call TmuxOrSplitSwitch('k', 'U')<CR>
-    nnoremap <silent> <C-l> :call TmuxOrSplitSwitch('l', 'R')<CR>
-else
-    nnoremap <C-h> <C-w>h
-    map <C-j> <C-w>j
-    map <C-k> <C-w>k
-    map <C-l> <C-w>l
-endif
+" Split navigation
+nnoremap <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 " Key mappings
 map <F9> :tabnew<CR>

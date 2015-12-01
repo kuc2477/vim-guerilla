@@ -1,22 +1,22 @@
 # vim-guerilla
-Minimal vimrc for guerilla devs
+Lightweight cross platform vim configuration for guerilla devs
 
 
 # Note
-This project is a work in progress
+This project is still a work in progress
 
 
 ## Compatibility
-- **Just any platform**
 - UNIX-like systems (Ubuntu, CentOS, ... etc)
 - Windows
 - OS X
+- **Just any platform**
 
 
 ## Requirements
-- **Just vim and git on your platform**
 - no root privilege required
 - no vim extensions required
+- **Just vim and git on your platform**
 
 
 ## Occupy
@@ -30,20 +30,21 @@ This project is a work in progress
 
 
 ## Features
-- Evacuate current user's vimrc on occupation and restore when `vim-guerilla` retreats
+- Evacuates current user's vimrc on occupation
+- Restores previous vimrc on retreat
 - Sensible indentation for each languages
-- Auto completion (powered by [supertab])
-- Colorschemes (default with [wombat256i])
 - Syntax highlights
-- Fuzzy file navigation (powered by [ctrlp])
-- Fuzzy code navigation (powered by [easymotion])
-- [nerdtree] support
+- Auto completion (powered by [supertab])
+- Colorschemes (default with [gruvbox])
+- Fuzzy file navigation ([ctrlp])
+- Fuzzy code navigation ([easymotion])
+- File system navigation ([nerdtree])
 
 ## Customization
 - Fully documented
 - Feel free to customize configurations as you want!
 
-[wombat256i]: https://github.com/dsolstad/vim-wombat256i
+[gruvbox]: https://github.com/morhetz/gruvbox
 [supertab]: https://github.com/ervandew/supertab
 [ctrlp]: https://github.com/kien/ctrlp.vim
 [easymotion]: https://github.com/easymotion/vim-easymotion
