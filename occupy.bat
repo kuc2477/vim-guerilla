@@ -45,7 +45,7 @@ if exist %USER_VIMDIR% (move %USER_VIMDIR% %SHELTER%)
 
 :: deploy guerillas
 xcopy %GUERILLA_VIMRC% %USERPROFILE%\_vimrc
-xcopy %GUERILLA_VIMDIR% %USERPROFILE%\vimfiles
+xcopy /E %GUERILLA_VIMDIR% %USERPROFILE%\vimfiles
 
 :: install plugins
 gvim +PluginInstall +PluginClean! +qall
