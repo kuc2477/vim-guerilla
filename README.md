@@ -1,7 +1,7 @@
 # vim-guerilla
 Minimal, lightweight cross platform vim configuration for guerilla devs
 
-![usage cast](kuc2477.github.com/vim-guerilla/cast.gif)
+![usage cast](./cast.gif)
 
 ## Note
 Windows users should add installed gvim directory to your $PATH
