@@ -1,10 +1,10 @@
 # vim-guerilla
 Minimal, lightweight cross platform vim configuration for guerilla devs
 
-## Author
+# Author
 [Ha Junsoo](https://github.com/kuc2477)
 
-## Rationale
+# Rationale
 Although vim has one of the most richest plugin ecosystem by itself,
 some of them requires vim extensions (python, lua, etc) and it sucks
 when it comes to a situation where we need them on non-root privileged
@@ -15,24 +15,24 @@ vim extensions at all.**
 `vim-guerilla` will create a backup of previous vim configurations on
 occupation and restore it when you retreat.
 
-## TL;DR
+# TL;DR
 `vim-guerilla` solves following 2 problems
 - Need for a lightweight, cross platform vim configuration with easy installation
 - Tedious work to create backup of previous configurations before installing one's own vimrc
 
 
 
-## Usage
+# Usage
 ![usage cast](./cast.gif)
 
-## Occupy
+# Occupy
 `occupy.[sh|bat]` (*windows users should add gvim directory to
                     your `PATH` before occupation*)
 
-## Retreat
+# Retreat
 `retreat.[sh|bat]`
 
-## Features
+# Features
 - Evacuate current user's vimrc on occupation
 - Restore previous vimrc on retreat
 - Sensible indentation for each languages
@@ -45,19 +45,19 @@ occupation and restore it when you retreat.
 - Fuzzy code navigation ([easymotion])
 - File system navigation ([nerdtree])
 
-## Compatibility
+# Compatibility
 - UNIX-like systems (Ubuntu, CentOS, ... etc)
 - Windows
 - OS X
 - **Just any platform**
 
-## Requirements
+# Requirements
 - no root privilege required
 - no vim extensions required
 - **Just vim (gvim) and git on your platform**
 
 
-## Customization
+# Customization
 - Fully documented
 - Feel free to customize configurations as you want!
 
