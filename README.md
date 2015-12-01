@@ -1,11 +1,6 @@
 # vim-guerilla
 Minimal, lightweight cross platform vim configuration for guerilla devs
 
-
-## Author
-- [Ha Junsoo](kuc2477@gmail.com)
-
-
 ## Note
 This project is still a work in progress
 
