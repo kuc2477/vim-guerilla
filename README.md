@@ -12,15 +12,13 @@ local machines with vanilla vim. **`vim-guerilla` is a sensible vim
 configuration with a handful of plugins that doesn't require any
 vim extensions at all.**
 
-`vim-guerilla` will create a backup of previous vim configurations on
-occupation and restore it when you retreat.
+Also, `vim-guerilla` will create a backup of previous vim configurations on
+occupation and restore them when on your retreat.
 
 # TL;DR
 `vim-guerilla` solves following 2 problems
 - Need for a lightweight, cross platform vim configuration with easy installation
 - Tedious work to create backup of previous configurations before installing one's own vimrc
-
-
 
 # Usage
 ![usage cast](./cast.gif)
@@ -60,7 +58,6 @@ occupation and restore it when you retreat.
 # Customization
 - Fully documented
 - Feel free to customize configurations as you want!
-
 
 [wombat]: https://github.com/dsolstad/vim-wombat256i
 [supertab]: https://github.com/ervandew/supertab
