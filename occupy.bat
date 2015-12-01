@@ -12,7 +12,7 @@ set SHELTER = .\_shelter
 set GUERILLA_VIMRC=.\vimrc
 set GUERILLA_VIMDIR=.\vim
 set USER_VIMRC=%USERPROFILE%\_vimrc
-set USER_VIMDIR=%USERPROFILE%\_vim
+set USER_VIMDIR=%USERPROFILE%\vimfiles
 
 
 :: ============
@@ -21,12 +21,16 @@ set USER_VIMDIR=%USERPROFILE%\_vim
 
 git submodule update --init
 
-set /p user_vimrc_content=<%USER_VIMRC%
+:: get contents of vimrcs to check equality
+if exist %USER_VIMRC% set /p user_vimrc_content=<%USER_VIMRC%
 set /p guerilla_vimrc_content=<%GUERILLA_VIMRC%
 
-if exist %USER_VIMRC% (goto :start)
+:: run infiltration only when currently installed user vimrc
+:: is different from guerilla vimrc or it just doesn't exists.
+if not exist %USER_VIMRC% (goto :start)
 if not "%user_vimrc_content%" == "%guerilla_vimrc_content%" (goto :start)
 goto :end
+
 
 :start
 :: create shelter if it doesn't exists
@@ -41,7 +45,7 @@ if exist %USER_VIMDIR% (move %USER_VIMDIR% %SHELTER%)
 
 :: deploy guerillas
 xcopy %GUERILLA_VIMRC% %USERPROFILE%\_vimrc
-xcopy %GUERILLA_VIMDIR% %USERPROFILE%\_vim
+xcopy %GUERILLA_VIMDIR% %USERPROFILE%\vimfiles
 
 :: install plugins
 gvim +PluginInstall +PluginClean! +qall

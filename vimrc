@@ -3,7 +3,14 @@ set nocompatible
 
 " VUNDLE
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim/
+
+" configure runtime path based on machine's OS
+if has('win32')
+    set rtp+=~/vimfiles/bundle/Vundle.vim/
+else
+    set rtp+=~/.vim/bundle/Vundle.vim/
+endif
+
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
@@ -22,7 +29,7 @@ Plugin 'Lokaltog/vim-easymotion'
 " Auto completion
 Plugin 'ervandew/supertab'
 
-" Multiple cursor 
+" Multiple cursor
 Plugin 'terryma/vim-multiple-cursors'
 
 " Surround
@@ -81,9 +88,9 @@ set tabstop=4
 " Search behaviour
 set hlsearch
 set incsearch
-set magic					
+set magic
 
-" UI 
+" UI
 set nu
 set colorcolumn=79
 highlight ColorColumn ctermbg=235
@@ -127,7 +134,7 @@ nnoremap <leader>= :res +20<CR>
 " Lang specific indentations
 au FileType sh setl ts=2 sw=2 sts=2
 au FileType bash setl ts=2 sw=2 sts=2
-au FileType haskell setl sw=2 
+au FileType haskell setl sw=2
 au FileType javascript setl ts=2 sw=2 sts=2
 au FileType html setl ts=2 sw=2 sts=2
 au FileType css setl ts=2 sw=2 sts=2
