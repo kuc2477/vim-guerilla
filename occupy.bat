@@ -40,12 +40,12 @@ if not exist %SHELTER% (mkdir %SHELTER%)
 del /q %SHELTER%\*
 
 :: evacuate current user's vimrc / vimdir if exists
-if exist %USER_VIMRC% (move %USER_VIMRC% %SHELTER%)
-if exist %USER_VIMDIR% (move %USER_VIMDIR% %SHELTER%)
+if exist %USER_VIMRC% (move /y %USER_VIMRC% %SHELTER%)
+if exist %USER_VIMDIR% (move /y %USER_VIMDIR% %SHELTER%)
 
 :: deploy guerillas
-xcopy %GUERILLA_VIMRC% %USERPROFILE%\_vimrc
-xcopy /E %GUERILLA_VIMDIR% %USERPROFILE%\vimfiles
+xcopy /y %GUERILLA_VIMRC% %USERPROFILE%\_vimrc
+xcopy /e /y %GUERILLA_VIMDIR% %USERPROFILE%\vimfiles
 
 :: install plugins
 gvim +PluginInstall +PluginClean! +qall
