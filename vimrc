@@ -65,7 +65,11 @@ let g:ctrlp_custom_ignore = {'dir': '*_build$'}
 
 " Default colorscheme
 set background=dark
-colorscheme wombat256i
+if has('win32')
+    colorscheme gruvbox
+else
+    colorscheme wombat256i
+endif
 
 " Terminal
 if &term =~ '256color'
