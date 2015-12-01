@@ -41,7 +41,6 @@ Plugin 'flazz/vim-colorschemes'
 
 call vundle#end()
 filetype plugin indent on
-syntax on
 
 
 "=============================Plugin Settings================================="
@@ -66,7 +65,8 @@ let g:ctrlp_custom_ignore = {'dir': '*_build$'}
 
 " Default colorscheme
 set background=dark
-colorscheme gruvbox
+colorscheme wombat256i
+syntax on
 
 " Default encoding - change default encoding as you want
 set enc=utf-8
