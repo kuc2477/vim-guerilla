@@ -68,6 +68,9 @@ let g:ctrlp_custom_ignore = {'dir': '*_build$'}
 set background=dark
 colorscheme gruvbox
 
+" Default encoding - change default encoding as you want
+set enc=utf-8
+
 " Terminal
 if &term =~ '256color'
     " disable Background Color Erase (BCE) so that color schemes
