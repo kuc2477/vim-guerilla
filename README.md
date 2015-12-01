@@ -1,9 +1,13 @@
 # vim-guerilla
-Lightweight cross platform vim configuration for guerilla devs
+Minimal, lightweight cross platform vim configuration for guerilla devs
 
 
 # Note
 This project is still a work in progress
+
+
+# Author
+- [Ha Junsoo](kuc2477@gmail.com)
 
 
 ## Compatibility
@@ -11,7 +15,6 @@ This project is still a work in progress
 - Windows
 - OS X
 - **Just any platform**
-
 
 ## Requirements
 - no root privilege required
@@ -22,7 +25,6 @@ This project is still a work in progress
 ## Occupy
 
 `occupy.[sh|bat]`
-
 
 ## Retreat
 
