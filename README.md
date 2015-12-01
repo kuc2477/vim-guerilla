@@ -1,11 +1,12 @@
 # vim-guerilla
 Minimal, lightweight cross platform vim configuration for guerilla devs
 
-![usage cast](./cast.gif)
-
 ## Note
 Windows users should add installed gvim directory to your $PATH
 enviornment variable before you run `occupy.bat`
+
+## Usage
+![usage cast](./cast.gif)
 
 ## Features
 - Evacuates current user's vimrc on occupation
