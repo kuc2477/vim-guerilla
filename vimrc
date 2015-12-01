@@ -20,8 +20,10 @@ Plugin 'VundleVim/Vundle.vim'
 
 " File system navigation
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'jistr/vim-nerdtree-tabs'
+
+" Easy commenting
+Plugin 'scrooloose/nerdcommenter'
 
 " Fuzzy search
 Plugin 'kien/ctrlp.vim'
@@ -32,6 +34,9 @@ Plugin 'ervandew/supertab'
 
 " Multiple cursor
 Plugin 'terryma/vim-multiple-cursors'
+
+" Visual moves
+Plugin 'kuc2477/vim-move'
 
 " Surround
 Plugin 'tpope/vim-surround'
@@ -48,6 +53,7 @@ filetype plugin indent on
 "THE-NERD-TREE
 let g:nerdtree_tabs_open_on_console_startup = 1
 let g:nerdtree_tabs_autoclose = 1
+let g:NERDTreeDirArrows = 0
 map <C-u> :NERDTreeTabsToggle<CR>
 
 "EASY-MOTION
@@ -58,7 +64,6 @@ nmap <leader>f <Plug>(easymotion-sn)
 let g:ctrlp_map = '<leader>p'
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 0
-let g:ctrlp_custom_ignore = {'dir': '*_build$'}
 
 
 "============================General Settings================================"
@@ -100,7 +105,7 @@ set colorcolumn=79
 highlight ColorColumn ctermbg=235
 
 " Split navigation
-nnoremap <C-h> <C-w>h
+map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
