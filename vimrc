@@ -91,6 +91,17 @@ else
     endif
 endif
 
+" Font
+if has('gui_running')
+    if has('gui_gtk2')
+        set guifont=Inconsolata
+    elseif has ('gui_macvim')
+        set guifont=Menlo
+    elseif has('gui_win32')
+        set guifont=Consolas
+    endif
+endif
+
 " Keystroke timeout
 set timeoutlen=1500
 
