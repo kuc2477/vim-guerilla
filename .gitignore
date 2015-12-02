@@ -6,6 +6,7 @@ vim/*
 
 # shelter
 .shelter/
+_shelter/
 
 # swap files
 *.sw*

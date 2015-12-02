@@ -6,7 +6,7 @@
 :: =====
 
 :: shelter
-set SHELTER = .\_shelter
+set SHELTER=.\_shelter
 
 :: vim
 set GUERILLA_VIMRC=.\vimrc
@@ -25,10 +25,10 @@ git submodule update --init
 if exist %USER_VIMRC% set /p user_vimrc_content=<%USER_VIMRC%
 set /p guerilla_vimrc_content=<%GUERILLA_VIMRC%
 
-:: run infiltration only when currently installed user vimrc
+:: TODO: run infiltration only when currently installed user vimrc
 :: is different from guerilla vimrc or it just doesn't exists.
 if not exist %USER_VIMRC% (goto :start)
-if not "%user_vimrc_content%" == "%guerilla_vimrc_content%" (goto :start)
+goto :start    
 goto :end
 
 
