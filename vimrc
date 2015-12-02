@@ -81,6 +81,7 @@ set enc=utf-8
 
 " Terminal
 if has('gui_running')
+else
     set term=xterm-256color
     if &term =~ '256color'
         " disable Background Color Erase (BCE) so that color schemes
