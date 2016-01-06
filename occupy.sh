@@ -39,6 +39,6 @@ if [[ ! -f "$USER_VIMRC" || \
   cp -rfi "$GUERILLA_VIMDIR" "$HOME/.vim"
 
   # install plugins
-  vim +PluginInstall +PluginClean! +qall
+  vim +PlugInstall +PlugClean! +qall
 fi
 

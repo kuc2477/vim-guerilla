@@ -1,53 +1,45 @@
 " NOT COMPATIBLE TO LEGACY VI VERSIONS
 set nocompatible
 
-"==============================VUNDLE======================================="
-
-" configure runtime path based on machine's OS
-if has('win32')
-    set rtp+=~/vimfiles/bundle/Vundle.vim/
-else
-    set rtp+=~/.vim/bundle/Vundle.vim/
-endif
-
-filetype off
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-
 
 "==============================Plugin List==================================="
 
+filetype off
+call plug#begin('~/.vim/plugged')
+
+" Git interface
+Plug 'tpope/vim-fugitive'
+
 " File system navigation
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
 
 " Easy commenting
-Plugin 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdcommenter'
 
 " Fuzzy search
-Plugin 'kien/ctrlp.vim'
-Plugin 'Lokaltog/vim-easymotion'
+Plug 'kien/ctrlp.vim'
+Plug 'Lokaltog/vim-easymotion'
 
 " Smooth scroll
-Plugin 'terryma/vim-smooth-scroll'
+Plug 'terryma/vim-smooth-scroll'
 
 " Auto completion
-Plugin 'ervandew/supertab'
+Plug 'ervandew/supertab'
 
 " Multiple cursor
-Plugin 'terryma/vim-multiple-cursors'
+Plug 'terryma/vim-multiple-cursors'
 
 " Visual moves
-Plugin 'kuc2477/vim-move'
+Plug 'kuc2477/vim-move'
 
 " Surround
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 
 " Colorschemes
-Plugin 'flazz/vim-colorschemes'
+Plug 'flazz/vim-colorschemes'
 
-call vundle#end()
+call plug#end()
 filetype plugin indent on
 
 
@@ -110,7 +102,7 @@ endif
 
 " Keystroke timeout
 set timeoutlen=200
-au InsertEnter * set timeoutlen=70
+au InsertEnter * set timeoutlen=90
 au InsertLeave * set timeoutlen=200
 
 " Indentations to fallback
@@ -133,7 +125,7 @@ highlight ColorColumn ctermbg=235
 " Don't have to press shift when typing commands
 map ; :
 
-" Don't have to go far to reach esc to escape
+" Don't make your finger busy
 inoremap jk <ESC>
 vnoremap jk <ESC>
 

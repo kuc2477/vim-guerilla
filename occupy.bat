@@ -48,5 +48,5 @@ xcopy /y %GUERILLA_VIMRC% %USERPROFILE%\_vimrc
 xcopy /e /y %GUERILLA_VIMDIR% %USERPROFILE%\vimfiles
 
 :: install plugins
-gvim +PluginInstall +PluginClean! +qall
+gvim +PlugInstall +PlugClean! +qall
 :end
