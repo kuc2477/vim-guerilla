@@ -29,6 +29,9 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
 
+" Smooth scroll
+Plugin 'terryma/vim-smooth-scroll'
+
 " Auto completion
 Plugin 'ervandew/supertab'
 
@@ -59,6 +62,10 @@ map <C-u> :NERDTreeTabsToggle<CR>
 "EASY-MOTION
 let g:EasyMotion_smartcase = 1
 nmap <C-f> <Plug>(easymotion-sn)
+
+"VIM-SMOOTH-SCROLL
+noremap <silent> gk :call smooth_scroll#up(&scroll, 0, 6)<CR>
+noremap <silent> gj :call smooth_scroll#down(&scroll, 0, 6)<CR>
 
 "VIM-MOVE
 let g:move_key_modifier = 'C'
@@ -103,7 +110,7 @@ endif
 
 " Keystroke timeout
 set timeoutlen=200
-au InsertEnter * set timeoutlen=100
+au InsertEnter * set timeoutlen=70
 au InsertLeave * set timeoutlen=200
 
 " Indentations to fallback
