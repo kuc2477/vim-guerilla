@@ -1,9 +1,3 @@
-# plugins themselves will not be version controlled
-vim/*
-
-# except for vundle plugin submodule
-!vim/bundle/Vundle.vim
-
 # shelter
 .shelter/
 _shelter/
