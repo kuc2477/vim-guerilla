@@ -58,13 +58,12 @@ map <C-u> :NERDTreeTabsToggle<CR>
 
 "EASY-MOTION
 let g:EasyMotion_smartcase = 1
-nmap <leader>f <Plug>(easymotion-sn)
+nmap <C-f> <Plug>(easymotion-sn)
 
 "VIM-MOVE
 let g:move_key_modifier = 'C'
 
 "CTRLP
-let g:ctrlp_map = '<leader>p'
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 0
 
@@ -103,7 +102,9 @@ if has('gui_running')
 endif
 
 " Keystroke timeout
-set timeoutlen=1500
+set timeoutlen=200
+au InsertEnter * set timeoutlen=100
+au InsertLeave * set timeoutlen=200
 
 " Indentations to fallback
 set expandtab
@@ -121,6 +122,13 @@ set magic
 set nu
 set colorcolumn=79
 highlight ColorColumn ctermbg=235
+
+" Don't have to press shift when typing commands
+map ; :
+
+" Don't have to go far to reach esc to escape
+inoremap jk <ESC>
+vnoremap jk <ESC>
 
 " Split navigation
 map <C-h> <C-w>h
